@@ -1,0 +1,169 @@
+body {
+    font-family: "Avenir Next";  
+   }
+   li {
+    list-style: none;
+    float: left;
+    padding: 33px 20px;
+    font-size: 20px;
+  }
+   .header{
+    background-color: #ffff
+    ;
+    height: 70px;
+  }
+  .header-logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    float: left;
+    padding: 10px 20px;
+    margin-right: 50px;
+  }
+  .header-list li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+    padding: 10px 20px;
+    margin-left: 200px;
+  }
+  .main{
+    padding: 100px 80px;
+    background-image: url(/Image/white.jpg);
+    background-size: cover;
+    width: auto;
+    height: auto;
+    padding: 80px 90px;
+    margin-bottom: 0px;
+  }
+  .copy-container h1 {
+    font-size: 100px;
+  }
+  .copy-container h2 {
+    font-size: 60px;
+  }
+  .copy-container span {
+    color: #FF4A4A;
+  }
+  .footer{
+    background-color: #9de2ec;
+    color: #fff;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 0px;
+  }
+  .footer-logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 20px;
+    float: left;
+  }
+  .footer-list {
+    float: right;
+  }
+  .footer-list li {
+    font-family: serif;
+    color: black;
+    padding-top: 0px;
+    padding-bottom: 15px;
+  }
+
+  .portfolio-heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+    padding: 30px 40px;
+  }
+
+  .header-list :hover{
+    background:#9de2ec;
+    color: black
+  }
+/* 
+  .container{
+    max-width: 1200px;
+    margin:auto;
+    background:#f2f2f2;
+    overflow:auto;
+  } */
+
+  /* .gallery{
+    margin:5px;
+    border: 1px solid #cccccc
+    float:left;
+    width:390px;
+  }
+
+  .gallery img{
+    width: 100%;
+    height: auto
+  } */
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery__img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
